@@ -1,5 +1,6 @@
 <?php
 // functions.php
+
 function sqlAllCustomers(): string
 {
     return "SELECT customer_id, first_name, last_name FROM customers ORDER BY last_name, first_name";
@@ -42,5 +43,5 @@ function sqlAllJoins(): string
     return "SELECT * FROM rentals 
             JOIN customers ON rentals.customer_id = customers.customer_id 
             JOIN bikes ON rentals.bike_id = bikes.bike_id
-            JOIN bike_types ON bikes.type_id = bike_types.type_id";
+            JOIN types ON bikes.type_id = types.type_id";
 }

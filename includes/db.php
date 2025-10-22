@@ -1,7 +1,7 @@
 <?php
     function db() {
         try {
-            $dsn = "mysql:host=localhost;bs_bikeshop=introtodb;charset=utf8mb4";
+            $dsn = "mysql:host=localhost;dbname=bs_bikeshop;charset=utf8mb4";
             $user = "root";
             $pass = "";
             
